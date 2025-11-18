@@ -104,7 +104,8 @@ app.get("/menu", async (req, res) => {
 
   try {
     const response = await axios.get(
-      `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.37240&lng=78.43780&restaurantId=${restId}&catalog_qa=undefined&submitAction=ENTER`,
+      // `https://www.swiggy.com/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.37240&lng=78.43780&restaurantId=${restId}&catalog_qa=undefined&submitAction=ENTER`,
+      ` https://www.swiggy.com/mapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.38430&lng=78.45830&restaurantId=${restId}&query=Idli&submitAction=ENTER&source=collection`,
       {
         headers: {
           "User-Agent":
